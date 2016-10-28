@@ -83,7 +83,7 @@ public class RayMarching : MonoBehaviour
 			_ppCamera.enabled = false;
 		}
 
-		_ppCamera.CopyFrom(camera);
+		_ppCamera.CopyFrom(GetComponent<Camera>());
 		_ppCamera.clearFlags = CameraClearFlags.SolidColor;
 		_ppCamera.backgroundColor = Color.white;
 		_ppCamera.cullingMask = volumeLayer;
